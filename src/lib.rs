@@ -30,6 +30,6 @@ pub fn run(input: &String) -> Result<u32, Box<dyn Error>> {
     }
 
     let result: u32 = stack.pop().unwrap();
-    println!("Result of calulation on {} is {}", input, result);
+    println!("Result of calulation on \"{}\" is [{}]", input, result);
     Ok(result)
 }

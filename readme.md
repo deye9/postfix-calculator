@@ -29,7 +29,7 @@ cargo run "1 7 4 + 5 - *"
 ```
 will output
 ```
-[ 6 ]
+Result of calulation on "1 7 4 + 5 - *" is [ 6 ]
 ```
 
 ```
@@ -38,5 +38,5 @@ cargo run "5 6 7 * + 1 -"
 ```
 will output
 ```
-[ 46 ]
+Result of calulation on "5 6 7 * + 1 -" is [ 46 ]
 ```
