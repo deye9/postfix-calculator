@@ -5,21 +5,26 @@ A postfix Calculator in Rust
 ## Usage
 
 To compile, use ```cargo run```.
-To use, enter integers and operators (+, -, *, /). Enter can be pressed in between inputs without exiting, assuming there are enough operands. To exit the program, press ```Control + D```. The final result will be output.
+
+To use, enter integers and operators (+, -, *, /).
+
+Do space the values and remember to place them in quotes at the begining and end of the values. Once you press the enter key, the final result will be output.
 
 ## Postfix Algorithm
 
-foreach token
+<pre>
+  foreach token
     if token is integer
-        push token
+      push token
     else if token is operator
-        pop right side value
-        pop left side value
-        evaluate operator
-        push result
-    next
+      pop right side value
+      pop left side value
+      evaluate operator
+      push result
+  next
+</pre>
 
-We will be using the stack to achieve this. Using the concept of LIFO.
+We will be using a vector [`std::vec::Vec`] to achieve this. Using the concept of LIFO.
 
 ### Example
 
